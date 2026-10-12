@@ -10,7 +10,7 @@ y el administrador las gestione.
 - Panel de administración personalizado
 
 ## Cómo clonar el proyecto
-    git clone https://github.com/TU_USUARIO/vecinosapp.git
+    git clone https://github.com/samavalenciar-dev/vecinosapp.git
     cd vecinosapp
 
 ## Crear el entorno virtual e instalar dependencias
