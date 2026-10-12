@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block titulo %}Ingresar{% endblock %}
+{% block contenido %}
+<div class='card mx-auto' style='max-width: 420px;'>
+    <div class='card-header'>Iniciar sesión</div>
+    <div class='card-body'>
+        <form method='post'>
+            {% include 'incidencias/_campos.html' %}
+            <button class='btn btn-primary'>Entrar</button>
+            <a href='{% url 'registro' %}' class='btn btn-link'>Crear cuenta</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

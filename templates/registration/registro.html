@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block titulo %}Registro{% endblock %}
+{% block contenido %}
+<div class='card mx-auto' style='max-width: 500px;'>
+    <div class='card-header'>Crear cuenta de residente</div>
+    <div class='card-body'>
+        <form method='post'>
+            {% include 'incidencias/_campos.html' %}
+            <button class='btn btn-success'>Registrarme</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

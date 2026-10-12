@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block titulo %}Incidencia{% endblock %}
+{% block contenido %}
+<div class='card mx-auto' style='max-width: 650px;'>
+    <div class='card-header'>
+        {% if object %}Editar incidencia{% else %}Reportar una incidencia{% endif %}
+    </div>
+    <div class='card-body'>
+        <form method='post' enctype='multipart/form-data'>
+            {% include 'incidencias/_campos.html' %}
+            <button class='btn btn-success'>Guardar</button>
+            <a class='btn btn-primary' href='{% url 'lista_incidencias' %}'>Cancelar</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

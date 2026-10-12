@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block titulo %}Mi perfil{% endblock %}
+{% block contenido %}
+<div class='card mx-auto' style='max-width: 500px;'>
+    <div class='card-header'>Mi perfil</div>
+    <div class='card-body'>
+        <p><strong>Nombre:</strong> {{ user.first_name|default:user.username }}</p>
+        <p><strong>Correo:</strong> {{ user.email }}</p>
+        <form method='post'>
+            {% include 'incidencias/_campos.html' %}
+            <button class='btn btn-success'>Guardar cambios</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
